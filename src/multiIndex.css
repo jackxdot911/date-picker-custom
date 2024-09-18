@@ -35,7 +35,7 @@
 }
 
 .react-calendar__tile {
-  @apply hover:!bg-white enabled:!bg-white ;
+  /* @apply hover:!bg-white enabled:!bg-white ; */
   display: flex;
   justify-content: center;
   flex: 0 0 calc(100% / 7) !important;
@@ -68,6 +68,10 @@
   color: rgb(170, 43, 170);
 }
 
+.react-calendar__tile {
+  @apply hover:!bg-white;
+}
+
 .react-calendar__tile--today {
   @apply bg-white hover:bg-white;
 }
@@ -85,12 +89,8 @@
   background-color: white !important;
 }
 
-.react-calendar__tile--active {
-  @apply hover:!bg-white !bg-white;
-}
-
 .react-calendar__tile--disabled {
-  @apply text-gray-400 cursor-not-allowed;
+  @apply !text-gray-400 cursor-not-allowed;
 }
 
 .react-calendar__tile--selected:enabled:hover {

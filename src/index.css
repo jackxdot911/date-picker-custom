@@ -89,7 +89,7 @@
 }
 
 .react-calendar__tile--disabled {
-  @apply text-gray-400 cursor-not-allowed;
+  @apply !text-gray-400 cursor-not-allowed;
 }
 
 .react-calendar__tile--selected:enabled:hover {
